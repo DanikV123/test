@@ -1,0 +1,21 @@
+{
+  "name": "untitled",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "danil <danilavajda@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/DanikV123/test",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "^1.3.3",
+    "jquery": "^3.2.1"
+  }
+}
