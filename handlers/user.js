@@ -1,6 +1,4 @@
-/**
- * Created by danil on 09.04.2017.
- */
+
 var User = function () {
     var mongoose = require ('mongoose');
     var Schema = mongoose.Schema;
