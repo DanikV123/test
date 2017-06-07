@@ -9,9 +9,9 @@ module.exports = (function(){
     var userHandler = new UserHandelr();
 
 
-    userRouter.get('/', userHandler.getAll);
-    userRouter.post('/:login/:weight', userHandler.updateUser);
-    userRouter.post('/', userHandler.create);
+    userRouter.get('/', userHandler.getAllusers);                 //при запросе на /user используем метод getAllusers из UserHandler
+    userRouter.post('/:login/:weight', userHandler.updateUser);   //при запросе на /:login/:weight используем метод updateUsers из userHandler
+    userRouter.post('/', userHandler.create);                     //при запросе на / используем метод create из user
 
     return userRouter;
 }) ;

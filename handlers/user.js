@@ -18,7 +18,7 @@ var User = function () {
         var body = req.body;                       //считывание информации, введенной пользователем
         var user = new User(body);                 //создание нового документа
         var _id = global.userId || (global.userId = 1);  //
-        User._id = _id;                            //
+        User._id = _id;                                  //
 
         user.save(function (err, _user) {
             if(err) {
@@ -27,21 +27,21 @@ var User = function () {
 
             res.status(200).send(_user);
         });
-        res.status(200).send(req.body);
+        res.status(200).send(req.body);         //res.status - установка статуса(200 - успех); отправляем body
     };
 
     this.updateUser = function (req, res, next) {   //создание метода updateUser
-        var login = req.params.login;
-        var weight = req.params.weight;
+        var login = req.params.login;               //
+        var weight = req.params.weight;             //
 
-        res.status(200).send({login: login, weight: weight});
+        res.status(200).send({login: login, weight: weight}); //res.status - установка статуса(200 - успех); отправляем login и weight
         
     };
 
-        this.getAll = function (req, res, next) {   //создание метода getAll
-            console.log(req.myVar);
-            res.status(200).send(req.ip);
+        this.getAllusers = function (req, res, next) {   //создание метода getAll
+            console.log(req.myVar);                      //
+            res.status(200).send(req.ip);                //
         }
     };
 
-module.exports = User;
+module.exports = User;  //даем доступ на использование методов одновременно

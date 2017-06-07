@@ -8,8 +8,8 @@ module.exports = function(app) {
       app.use(bodyParser.json());
       app.get('/', function(req, res, next) {       //app.get('путь', функция)
           //todo send index.html
-          res.status(200).sendfile('index.html');
+          res.status(200).sendfile('index.html');   //устанавливаем статус 200, отправляем index.html
       });
-app.use('/user', userRouter);
+app.use('/user', userRouter);   //
 
 };
