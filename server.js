@@ -34,3 +34,4 @@ conection.once('connected', function(db){  //Если подключились -
 
         process.exit(1);
     });
+//changes//

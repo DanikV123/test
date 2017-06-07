@@ -20,3 +20,4 @@ user.set('age', 23);    //добавляем в user(наше body) age со з�
 console.log(user.get('name'));   //выписываем name из user(наше body)
 console.dir(user.toJSON());      //выписываем весь user(наше body) как обьект
 console.log(user);
+//changes//

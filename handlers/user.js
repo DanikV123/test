@@ -44,4 +44,6 @@ var User = function () {
         }
     };
 
+
 module.exports = User;  //даем доступ на использование методов одновременно
+//changes//
