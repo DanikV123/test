@@ -9,10 +9,10 @@ module.exports = (function(){
     var userHandler = new UserHandelr();
 
 
-    userRouter.get('/', userHandler.getAllusers);                 //при запросе на /user используем метод getAllusers из UserHandler
-    userRouter.post('/:login/:weight', userHandler.updateUser);   //при запросе на /:login/:weight используем метод updateUsers из userHandler
+    userRouter.get('/', userHandler.getAll);                 //при запросе на /user используем метод getAll из UserHandler
+    userRouter.get('/:id', userHandler.getById);
     userRouter.post('/', userHandler.create);                     //при запросе на / используем метод create из user
+    userRouter.post('/:login/:weight', userHandler.updateUser);   //при запросе на /:login/:weight используем метод updateUsers из userHandler
 
     return userRouter;
 }) ;
-//changes//
